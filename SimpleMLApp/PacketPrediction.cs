@@ -1,14 +1,13 @@
 ﻿using Microsoft.ML.Data;
 
-namespace SimpleMLApp
+namespace SimpleMLApp;
+
+public class PacketPrediction
 {
-    public class PacketPrediction
-    {
-        [ColumnName("PredictedLabel")]
-        public bool Prediction { get; set; }
+    [ColumnName("PredictedLabel")]
+    public bool Prediction { get; set; }
 
-        public float Probability { get; set; }
+    public float Probability { get; set; }
 
-        public float Score { get; set; }
-    }
+    public float Score { get; set; }
 }
