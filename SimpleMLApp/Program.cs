@@ -12,7 +12,7 @@ namespace SimpleMLApp
             var builder = new MLModelBuilder(dataPath);
 
             // Modelni qurish va o'qitish
-            var model = builder.BuildAndTrainModel();
+            var model = builder.TrainAndEvaluateAll();
             Console.WriteLine("✅ Model tayyor!");
 
             var mlContext = new MLContext();
